@@ -1,0 +1,89 @@
+$bg-color: #6a7980
+$text-color: #fbfbfb
+$text-font: 'Inter', sans-serif
+$hover-animation-time: 0.5s
+$row-middle-margin: 3em
+
+html
+    height: 100%
+
+body
+    margin: 0em
+    height: 100%
+    background-color: $bg-color
+    color: $text-color
+
+    font-family: $text-font
+
+    display: flex
+    justify-content: center
+    align-items: center
+
+input
+    width: 100%
+    background: transparent
+    border: none
+    font-family: $text-font
+    color: $text-color
+    padding: 0 15px
+
+input:focus
+    outline: 0
+
+input::placeholder
+    color: $text-color
+
+a
+    color: $text-color
+
+li
+    list-style-type: none
+
+hr
+    display: block
+    height: 1px
+    border: 0
+    border-top: 1px solid $text-color
+    margin: 1em 2em
+    padding: 0
+
+.link-title
+    margin: 0em
+    font-size: x-large
+    font-weight: 300
+
+.link-list
+    padding: 0em
+    margin: 0em
+    font-size: xx-large
+    font-weight: 400
+
+.list-item
+    background-color: transparent
+    text-decoration-color: transparent
+    transition: background $hover-animation-time ease-in-out, text-decoration-color $hover-animation-time ease-in-out
+
+.list-item:hover
+    color: $bg-color
+    background-color: $text-color
+    text-decoration-color: $bg-color
+
+.category
+    margin: 0em 2em
+
+.category-top-row
+    margin-bottom: $row-middle-margin
+
+.category-bottom-row
+    margin-top: $row-middle-margin
+
+#form-search
+    margin: 1em 2em
+
+#sidebar
+    height: auto
+    width: 12em
+    margin: 0em 1em
+
+#links
+    margin: 0em 1em
